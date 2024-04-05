@@ -14,7 +14,10 @@ const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
 	title: SiteConfig.title,
-	description: SiteConfig.description
+	description: SiteConfig.description,
+	icons: {
+		icon: "/favicon.ico"
+	}
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
