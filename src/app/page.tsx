@@ -1,7 +1,13 @@
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			<h1>Hello word</h1>
+		<main>
+			<Card>
+				<CardHeader>
+					<CardTitle>Test card</CardTitle>
+				</CardHeader>
+			</Card>
 		</main>
 	);
 }
