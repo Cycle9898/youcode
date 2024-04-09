@@ -15,13 +15,15 @@ import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
+	DropdownMenuSeparator,
 	DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 import Loader from "@/components/ui/loader";
 import { useMutation } from "@tanstack/react-query";
-import { LogOut } from "lucide-react";
+import { LogOut, UserRoundCog } from "lucide-react";
 import type { Session } from "next-auth";
 import { signOut } from "next-auth/react";
+import Link from "next/link";
 
 export type LoggedInButtonProps = {
 	user: Session["user"];
@@ -46,6 +48,15 @@ function LoggedInButton({ user }: LoggedInButtonProps) {
 				</DropdownMenuTrigger>
 
 				<DropdownMenuContent>
+					<DropdownMenuItem asChild>
+						<Link href="/account">
+							<UserRoundCog className="mr-2" size={12} />
+							My account
+						</Link>
+					</DropdownMenuItem>
+
+					<DropdownMenuSeparator />
+
 					<AlertDialogTrigger asChild>
 						<DropdownMenuItem>
 							<LogOut className="mr-2" size={12} />
