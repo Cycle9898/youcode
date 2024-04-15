@@ -34,17 +34,13 @@ function PaginationButton({ totalPage, pageNb, baseUrl }: PaginationButtonProps)
 
 	return (
 		<div className="flex gap-2">
-			{totalPage > 1 && (
-				<>
-					<Button variant="outline" size="sm" onClick={handlePreviousPage}>
-						Previous
-					</Button>
+			<Button variant="outline" size="sm" onClick={handlePreviousPage} disabled={pageNb <= 0}>
+				Previous
+			</Button>
 
-					<Button variant="outline" size="sm" onClick={handleNextPage}>
-						Next
-					</Button>
-				</>
-			)}
+			<Button variant="outline" size="sm" onClick={handleNextPage} disabled={pageNb > totalPage - 2}>
+				Next
+			</Button>
 		</div>
 	);
 }

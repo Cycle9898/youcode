@@ -38,7 +38,7 @@ async function CoursePage({ params, searchParams }: CoursePageProps) {
 					</CardHeader>
 
 					<CardContent className="mt-4">
-						<Table>
+						<Table className="mb-4">
 							<TableHeader>
 								<TableRow>
 									<TableHead>User avatar</TableHead>
@@ -74,7 +74,7 @@ async function CoursePage({ params, searchParams }: CoursePageProps) {
 						</Table>
 
 						<PaginationButton
-							totalPage={(course._count?.users ?? 0) / 5}
+							totalPage={Math.floor((course._count?.users ?? 0) / 5)}
 							pageNb={pageNb}
 							baseUrl={`/admin/courses/${course.id}`}
 						/>
