@@ -95,12 +95,12 @@ async function CoursePage({ params, searchParams }: CoursePageProps) {
 						<Typography>{course._count?.users} users</Typography>
 						<Typography>{course._count?.lessons} lessons</Typography>
 						<Link
-							href={`/admin/course/${course.id}/edit`}
+							href={`/admin/courses/${course.id}/edit`}
 							className={buttonVariants({ variant: "outline" })}>
 							Edit
 						</Link>{" "}
 						<Link
-							href={`/admin/course/${course.id}/lessons`}
+							href={`/admin/courses/${course.id}/lessons`}
 							className={buttonVariants({ variant: "outline" })}>
 							Edit lessons
 						</Link>
