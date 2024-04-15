@@ -15,8 +15,7 @@ type CoursePageProps = {
 };
 
 async function CoursePage({ params, searchParams }: CoursePageProps) {
-	const pageNb = Number(searchParams.page ?? 1);
-	console.log(pageNb);
+	const pageNb = Number(searchParams.page ?? 0);
 
 	const session = await getRequiredAuthSession();
 
