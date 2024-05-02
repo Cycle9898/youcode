@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import LoginButton from "@/features/auth/LoginButton";
+import LoginButton from "@/components/features/auth/LoginButton";
 import { useEffect } from "react";
 
 type ErrorProps = {

@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import LogoutButton from "@/features/auth/LogoutButton";
+import LogoutButton from "@/components/features/auth/LogoutButton";
 import { getAuthSession } from "@/lib/auth";
 import Link from "next/link";
 

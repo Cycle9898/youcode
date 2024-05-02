@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { Typography } from "@/components/ui/Typography";
 import Image from "next/image";
-import AuthButton from "@/features/auth/AuthButton";
+import AuthButton from "@/components/features/auth/AuthButton";
 
 export function Header() {
 	return (

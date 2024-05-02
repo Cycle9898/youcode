@@ -6,7 +6,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { getRequiredAuthSession } from "@/lib/auth";
 import { getCourse } from "./course.query";
 import Link from "next/link";
-import PaginationButton from "@/features/auth/pagination/PaginationButton";
+import PaginationButton from "@/components/features/pagination/PaginationButton";
 import { buttonVariants } from "@/components/ui/button";
 
 type CoursePageProps = {
